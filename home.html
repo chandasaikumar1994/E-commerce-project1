@@ -79,8 +79,20 @@
 
                     <!------feature products-->
 
+                   
                     <div class="small-container">
                         <h2 class="title">Featured Products</h2>
+                        <div class="row row-2">
+                        <select id="mySelect" onchange="myFunction()">
+                        <option value="">---SelectProduct-----</option>
+                        <option value="Red Printed T-Shirt">Red Printed T-Shirt</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="White Printed T-Shirt">White Printed T-Shirt</option>
+                        <option value="Blue Printed T-Shirt">Blue Printed T-Shirt</option>
+                        </select>
+                        <p id="demo"></p>
+                    </div>
+
                         <div class="row">
                             <div class="col-4">
                               <a href="">  <img id="myimage" src="assets\images\product-1.jpg"  onclick="changeImage()"></a>
@@ -262,11 +274,11 @@
     <div class="small-container">
         <div class="row">
             <div class="col-2">
-                <img src="assets\images\exclusive.png" class="offer-img">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="assets\images\exclusive.png" class="offer-img">
             </div>
             <div class="col-2">
                 <p>Exclusivly Aviable on RedStore</p>
-                <h1 onclick="changeText()">Smart Band</h1>
+                <h1>Smart Band</h1>
                 <small>The Mi Smart Band 4 features a 39.9% larger
                     (than Mi Band 3) AMOLED color full-touch display width
                     adjustable brightness,so every thing is clear as can
@@ -433,6 +445,23 @@
      function myFunction(){
          var y=document.getElementById("p1").innerHTML="This is an e-commerce website";
      }
+
+     function myFunction(){
+        var z=document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML="you selected:"+z;
+     }
+
+     function bigImg(x){
+         x.style.height="500px";
+         x.style.width="500px";
+     }
+
+     function normalImg(x){
+         x.style.height="100%";
+         x.style.width="100%;"
+     }
+
+     
 
      
      

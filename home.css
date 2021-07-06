@@ -302,6 +302,23 @@ ul{
 
 }
 
+select{
+    border:1px solid #ff523b;
+    padding: 5px;
+    
+}
+
+select:focus{
+    outline: none;
+}
+
+.row-2{
+     float: right;
+     margin-top: -65px;
+     
+}
+
+
 
 /*media query for menu-----*/
 @media only screen and (max-width:800px){
