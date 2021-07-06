@@ -268,6 +268,19 @@
         </div>
     </div>
 </div>
+<center>
+<form action="#"  method="post">
+    <label>Price:</label>
+    <input id="price" autocomplete="off">
+    <label>Discount:</label>
+    <input id="discount" autocomplete="off">%
+    <button onclick="getPrice()">GetTotal</button>
+    <input readonly id="total">
+</form>
+</center>
+
+
+
 
  
 
@@ -462,6 +475,16 @@
          x.style.height="100%";
          x.style.width="100%;"
      }
+
+     function getPrice(){
+         var val1 = Number(document.getElementById("price").value);
+         var val2 = Number(document.getElementById("discount").value)/100;
+         var totalValue = val1-(val1*val2);
+         document.getElementById("total").value = totalValue.toFixed(2);
+     }
+
+     
+
 
 
      
