@@ -496,6 +496,12 @@
          const products=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
          function mySort(){
              products.sort();
+             products.pop();
+             products.push("Red Printed T-Shirt");
+             products.shift();
+             products.unshift("Branded Shirt");
+             products.splice(2,0,"Sleeves","TonJeans");
+             products.slice(1,0);
              document.getElementById("hello").innerHTML=products;
          }
 
@@ -505,6 +511,9 @@
              document.getElementById("hello1").innerHTML=product.fill("Branded Watch");
               
             }
+
+
+               
 
 
 
