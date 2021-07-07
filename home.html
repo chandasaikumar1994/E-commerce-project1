@@ -83,7 +83,7 @@
                     <div class="small-container">
                         <h2 class="title">Featured Products</h2>
                         <div class="row row-2">
-                        <select id="mySelect" onchange="myFunction()">
+                        <select id="mySelect" onchange="mySelection()">
                         <option value="">---SelectProduct-----</option>
                         <option value="Red Printed T-Shirt">Red Printed T-Shirt</option>
                         <option value="Shoes">Shoes</option>
@@ -277,6 +277,9 @@
     <button onclick="getPrice()">GetTotal</button>
     <input readonly id="total">
 </form>
+<br><br>
+<button onclick="mySort()">checkproducts</button>
+<p id="hello"></p>
 </center>
 
 
@@ -461,7 +464,7 @@
          var y=document.getElementById("p1").innerHTML="This is an e-commerce website";
      }
 
-     function myFunction(){
+     function mySelection(){
         var z=document.getElementById("mySelect").value;
         document.getElementById("demo").innerHTML="you selected:"+z;
      }
@@ -473,7 +476,7 @@
 
      function normalImg(x){
          x.style.height="100%";
-         x.style.width="100%;"
+         x.style.width="100%";
      }
 
      function getPrice(){
@@ -484,14 +487,18 @@
      }
 
      
-
-
-
+         const products=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
+         function mySort(){
+             products.sort();
+             products.pop();
+             products.push("Red Printed T-Shirt");
+             document.getElementById("hello").innerHTML=products;
+         }
      
 
-     
-     
+   
 </script>
+
 
 
 
