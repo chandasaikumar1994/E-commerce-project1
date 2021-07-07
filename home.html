@@ -308,6 +308,12 @@
         </div>
     </div>
 </div>
+<br><br>
+
+<center>
+    <p id="hello1"></p>
+    <button onclick="myFill()">Filter</button>
+</center>
 
 <!---testimonial----->
 <div class="testimonial">
@@ -490,10 +496,18 @@
          const products=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
          function mySort(){
              products.sort();
-             products.pop();
-             products.push("Red Printed T-Shirt");
              document.getElementById("hello").innerHTML=products;
          }
+
+         
+         function myFill(){
+            const product=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
+             document.getElementById("hello1").innerHTML=product.fill("Branded Watch");
+         }
+
+
+
+
      
 
    
