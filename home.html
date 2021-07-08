@@ -535,9 +535,9 @@
                 {name:"shirt",brand:"Twills",price:15000},
                 {name:"jerkin",brand:"WoodlandJackets",price:30000},
                 {name:"t-shirts",brand:"TomHilfghier",price:25000},
-                {name:"mobile",brand:"apple",cost:1500000},
-                {name:"laptop",brand:"dell",cost:45000},
-                {name:"wallclock",brand:"titan", cost:5000}
+                {name:"mobile",brand:"apple",price:1500000},
+                {name:"laptop",brand:"apple",price:45000},
+                {name:"wallclock",brand:"fasttrack", price:5000}
             ];
 
             const ages=[16,31,25,28,29,21,45,12,10,18,19];
@@ -549,6 +549,25 @@
              //filter
             const canDrink = ages.filter(age=>age>=21);
             console.log(canDrink);
+
+            const appleBrand = Brands.filter(Brands=>Brands.brand==='apple');
+            console.log(appleBrand);
+
+            //map
+            const agesSquare = ages.map(age => Math.sqrt(age));
+            console.log(agesSquare);
+
+            const agesTimesTwo = ages.map(age => age*2);
+            console.log(agesTimesTwo);
+
+            
+
+
+
+
+
+
+
             
            
             
