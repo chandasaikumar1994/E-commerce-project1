@@ -560,6 +560,13 @@
             const agesTimesTwo = ages.map(age => age*2);
             console.log(agesTimesTwo);
 
+            const object1 = {
+                item:"Red Printed Shirt"
+            };
+                Object.seal(object1)
+                object1.item ="Blue Printed Shirt"
+
+                console.log(object1.item);
             
 
 
