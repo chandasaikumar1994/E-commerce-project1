@@ -560,6 +560,7 @@
             const agesTimesTwo = ages.map(age => age*2);
             console.log(agesTimesTwo);
 
+             //object seal method
             const object1 = {
                 item:"Red Printed Shirt"
             };
@@ -567,6 +568,13 @@
                 object1.item ="Blue Printed Shirt"
 
                 console.log(object1.item);
+
+                //object.PrototypeOf
+
+                const prototype1 = {};
+                const object2 = Object.create(prototype1);
+
+                console.log(Object.getPrototypeOf(object2) === prototype1);
             
 
 
