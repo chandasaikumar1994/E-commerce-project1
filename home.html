@@ -499,6 +499,7 @@
          x.style.width="100%";
      }
 
+              //Calculating the discounts of the products
      function getPrice(){
          var val1 = Number(document.getElementById("price").value);
          var val2 = Number(document.getElementById("discount").value)/100;
@@ -632,7 +633,11 @@
                 console.log(Object.getPrototypeOf(object2) === prototype1);
 
 
+              //flat method()
 
+              var array=["Watch","Shoes",["Socks","T-shirt"]];
+              var newarray = array.flat();
+              console.log("After flattening the array:  "+newarray);  
                 
             
 
