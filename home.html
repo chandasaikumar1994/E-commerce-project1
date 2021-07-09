@@ -568,13 +568,15 @@
                 id:5645,
                
             }
-
+             //This method is used for displaying only keys of the product
             let keys=Object.keys(categories);
             console.log('keys',keys);
 
+            //This method is used for displaying only values of the product  
             let vals=Object.values(categories);
             console.log('vals',vals);
 
+             //This method is used for displaying both values and keys of the product   
             let entries=Object.entries(categories);
             console.log('Entries',entries);
 
@@ -591,11 +593,13 @@
 
             const ages=[16,31,25,28,29,21,45,12,10,18,19];
            //forEach
+           //This method is used for operating every value in the product
             Brands.forEach(function(brand){
              console.log(brand);
             });
             
              //filter
+             //This method is used to filter the products as per requirement
             const canDrink = ages.filter(age=>age>=21);
             console.log(canDrink);
 
@@ -603,6 +607,7 @@
             console.log(appleBrand);
 
             //map
+            //This method is used for returing the new array of products
             const agesSquare = ages.map(age => Math.sqrt(age));
             console.log(agesSquare);
 
@@ -610,6 +615,7 @@
             console.log(agesTimesTwo);
 
              //object seal method
+             //This method is used to seal the object i.e once it sealed the product cannot be deleted
             const object1 = {
                 item:"Red Printed Shirt"
             };
@@ -625,7 +631,7 @@
 
                 console.log(Object.getPrototypeOf(object2) === prototype1);
 
-                
+
 
                 
             
