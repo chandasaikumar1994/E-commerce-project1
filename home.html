@@ -278,8 +278,22 @@
     <input readonly id="total">
 </form>
 <br><br>
-<button onclick="mySort()">checkproducts</button>
+<button onclick="mySort()" class="btn">checkproducts</button>
+<button onclick="myDel()" class="btn">Delete</button>
+<button onclick="myAdd()" class="btn">AddProducts</button>
+<button onclick="myFirst()" class="btn">FirstDelete</button>
+<button onclick="mySecond()" class="btn">FirstAdd</button>
+<button onclick="myArray()" class="btn">Products</button>
+<button onclick="myDel1()" class="btn">Selected Products</button>
+
 <p id="hello"></p>
+<p id="delete"></p>
+<p id="add"></p>
+<p id="del1"></p>
+<p id="add1"></p>
+<p id="splice"></p>
+<p id="slice"></p>
+
 </center>
 
 
@@ -493,24 +507,59 @@
      }
 
      
-         const products=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
+         let products=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
+         //This method is used to sort the products in the list
          function mySort(){
              products.sort();
-             products.pop();
-             products.push("Red Printed T-Shirt");
-             products.shift();
-             products.unshift("Branded Shirt");
-             products.splice(2,0,"Sleeves","TonJeans");
-             products.slice(1,0);
-             document.getElementById("hello").innerHTML=products;
+            document.getElementById("hello").innerHTML=products;
          }
 
+         //This method is used to delete the last products from the list
+            function myDel(){
+             products.pop();
+             document.getElementById("delete").innerHTML=products;
+         }
+
+         //This method is used to add the last products into the list
+
+         function myAdd(){
+             products.push("Red Printed T-Shirt");
+             document.getElementById("add").innerHTML=products;
+         }
+
+         //This method is used to delete the first product from the list
+         function myFirst(){
+             products.shift();
+             document.getElementById("del1").innerHTML=products;
+         }
+
+         //This method is used to add the first product in the list
+
+         function mySecond(){
+             products.unshift("TonJeans");
+             document.getElementById("add1").innerHTML=products;
+         }
+
+         //This method is used to add products at any position in the list
+         function myArray(){
+             products.splice(2,0,"Branded Watch","Laptop");
+             document.getElementById("splice").innerHTML=products;
+         }
+
+         //This method is used to get the Selected products from the list
+         function myDel1(){
+             products.slice(1,3);
+             document.getElementById("slice").innerHTML=products;
+         }
+           
          
          function myFill(){
             const product=["Shoes","Black Printed Shirt","Socks","Watch","Blue Printed Shirt"];
              document.getElementById("hello1").innerHTML=product.fill("Branded Watch");
               
             }
+
+            
 
             let categories={
                 item:"Branded Jeans",
@@ -575,6 +624,8 @@
                 const object2 = Object.create(prototype1);
 
                 console.log(Object.getPrototypeOf(object2) === prototype1);
+
+                
             
 
 
