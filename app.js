@@ -1,5 +1,6 @@
 var MenuItems = document.getElementById("MenuItems");
-function menutoggle() {
+function  myMenutoggle() {
+    MenuItems.style.maxHeight="0px";
   if (MenuItems.style.maxHeight == "0px") {
     MenuItems.style.maxHeight = "200px";
   } else {
@@ -37,7 +38,7 @@ function getPrice() {
   var val1 = Number(document.getElementById("price").value);
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
-  document.getElementById("total").value = totalValue.toFixed(2);
+  document.getElementById("total").value = totalValue.toFixed();
 }
 
 //This method is used to sort the products in the list
