@@ -1,5 +1,4 @@
 var MenuItems = document.getElementById("MenuItems");
-MenuItems.style.maxHeight = "0px";
 function menutoggle() {
   if (MenuItems.style.maxHeight == "0px") {
     MenuItems.style.maxHeight = "200px";
@@ -41,31 +40,28 @@ function getPrice() {
   document.getElementById("total").value = totalValue.toFixed(2);
 }
 
-
 //This method is used to sort the products in the list
 function mySort() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.sort();
   document.getElementById("hello").innerHTML = products;
-  
 }
-
 
 //This method is used to delete the last products from the list
 function myDel() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.pop();
   document.getElementById("delete").innerHTML = products;
 }
@@ -73,26 +69,26 @@ function myDel() {
 //This method is used to add the last products into the list
 
 function myAdd() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.push("Red Printed T-Shirt");
   document.getElementById("add").innerHTML = products;
 }
 
 //This method is used to delete the first product from the list
 function myFirst() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.shift();
   document.getElementById("del1").innerHTML = products;
 }
@@ -100,39 +96,39 @@ function myFirst() {
 //This method is used to add the first product in the list
 
 function mySecond() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.unshift("TonJeans");
   document.getElementById("add1").innerHTML = products;
 }
 
 //This method is used to add products at any position in the list
 function myAddingProducts() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.splice(2, 0, "Branded Watch", "Laptop");
   document.getElementById("splice").innerHTML = products;
 }
 
 //This method is used to get the Selected products from the list
 function mySelectedProducts() {
-    let products = [
-        "Shoes",
-        "Black Printed Shirt",
-        "Socks",
-        "Watch",
-        "Blue Printed Shirt",
-      ];
+  let products = [
+    "Shoes",
+    "Black Printed Shirt",
+    "Socks",
+    "Watch",
+    "Blue Printed Shirt",
+  ];
   products.slice(1, 3);
   document.getElementById("slice").innerHTML = products;
 }
