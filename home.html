@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>XYZ STORE</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link
       href="assets\css\bootstrap.min.css"
@@ -47,17 +48,13 @@
 
         <div class="row">
           <div class="col-2">
-            <h1 class="two">
-              Give Your Workout<br />
-              A New Style!
-            </h1>
             <p id="p1">
               Success is'nt always about greatness.It's about
               consistency.Consistent<br />hard work gains success.Greatness will
               come.
             </p>
             <br />
-            <button onclick="myFunction()" class="btn">changeText</button>
+            <button onclick="myProduct()" class="btn">changeText</button>
 
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
@@ -94,7 +91,7 @@
     <div class="small-container">
       <h2 class="title">Featured Products</h2>
       <div class="row row-2">
-        <select id="mySelect" onchange="mySelection()">
+        <select id="mySelect" onchange="myProductSelection()">
           <option value="">---SelectProduct-----</option>
           <option value="Red Printed T-Shirt">Red Printed T-Shirt</option>
           <option value="Shoes">Shoes</option>
@@ -287,8 +284,8 @@
       <button onclick="myAdd()" class="btn">AddProducts</button>
       <button onclick="myFirst()" class="btn">FirstDelete</button>
       <button onclick="mySecond()" class="btn">FirstAdd</button>
-      <button onclick="myArray()" class="btn">Products</button>
-      <button onclick="myDel1()" class="btn">Selected Products</button>
+      <button onclick="myAddingProducts()" class="btn">Products</button>
+      <button onclick="mySelectedProducts()" class="btn">Selected Products</button>
 
       <p id="hello"></p>
       <p id="delete"></p>
@@ -433,7 +430,7 @@
           </div>
 
           <div class="footer-col-2">
-            <img src="assets\images\logo-white.png" />
+           <h2>XYZ STORE</h2>
             <p>
               Our Purpose Is To Sustianbly Make the pleasure and Benefits of
               Sports Accessible to the Many.
@@ -461,7 +458,7 @@
           </div>
         </div>
         <hr />
-        <p class="copyright">Copyright 2021 - RedStore</p>
+        <p class="copyright">Copyright 2021 - XYZ STORE</p>
       </div>
     </div>
 
