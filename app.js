@@ -1,6 +1,6 @@
 var MenuItems = document.getElementById("MenuItems");
-function  myMenutoggle() {
-    MenuItems.style.maxHeight="0px";
+function menutoggle() {
+  MenuItems.style.maxHeight = "0px";
   if (MenuItems.style.maxHeight == "0px") {
     MenuItems.style.maxHeight = "200px";
   } else {
@@ -35,10 +35,15 @@ function normalImg(x) {
 
 //Calculating the discounts of the products
 function getPrice() {
+  window.addEventListener("scroll", noscroll);
   var val1 = Number(document.getElementById("price").value);
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
-  document.getElementById("total").value = totalValue.toFixed();
+  document.getElementById("total").value = totalValue.toFixed(2);
+  function noscroll() {
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("scroll",noscroll);
 }
 
 //This method is used to sort the products in the list
