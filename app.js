@@ -1,6 +1,5 @@
 var MenuItems = document.getElementById("MenuItems");
-function menutoggle() {
-  MenuItems.style.maxHeight = "0px";
+function myMenuToggle() {
   if (MenuItems.style.maxHeight == "0px") {
     MenuItems.style.maxHeight = "200px";
   } else {
@@ -43,7 +42,7 @@ function getPrice() {
   function noscroll() {
     window.scrollTo(0, 0);
   }
-  window.addEventListener("scroll",noscroll);
+  window.addEventListener("scroll", noscroll);
 }
 
 //This method is used to sort the products in the list
