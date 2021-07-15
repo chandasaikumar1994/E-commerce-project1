@@ -34,7 +34,6 @@ function normalImg(x) {
 
 //Calculating the discounts of the products
 function getPrice() {
-  window.addEventListener("scroll", noscroll);
   var val1 = Number(document.getElementById("price").value);
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
