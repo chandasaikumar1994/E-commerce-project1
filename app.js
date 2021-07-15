@@ -30,6 +30,15 @@ function getPrice() {
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
   document.getElementById("total").value = totalValue.toFixed(2);
+  var $window = $(window),
+    previousScrollTop = 0,
+    scrollLock = false;
+  $window.scroll(function (click) {
+    if (scrollLock) {
+      $window.scrollTop(previousScrollTop);
+    }
+    previousScrollTop = $window.scrollTop();
+  });
 }
 
 //This method is used to sort the products in the list
