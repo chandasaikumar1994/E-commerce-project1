@@ -22,7 +22,7 @@ function myProductSelection() {
   document.getElementById("demo").innerHTML = "you selected:" + z;
 }
 
-
+//Zoom in and Zoom out image
 
 //Calculating the discounts of the products
 function getPrice() {
@@ -30,10 +30,6 @@ function getPrice() {
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
   document.getElementById("total").value = totalValue.toFixed(2);
-  function noscroll() {
-    window.scrollTo(0, 0);
-  }
-  window.addEventListener("scroll", noscroll);
 }
 
 //This method is used to sort the products in the list

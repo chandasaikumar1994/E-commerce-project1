@@ -323,15 +323,9 @@ select:focus {
   margin-top: -65px;
 }
 
-
-.zoom:hover {
-  transform: scale(1.2); 
-  position:absolute;
-  right:0;
- 
+form{
+  overflow: hidden;
 }
-
-
 
 /*media query for menu-----*/
 @media only screen and (max-width: 800px) {
@@ -359,5 +353,7 @@ select:focus {
   .menu-icon {
     display: block;
     cursor: pointer;
+    width: 28px;
+    margin-left: 20px;
   }
 }
