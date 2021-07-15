@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
     />
+    <link rel="Roboto\Roboto-Regular.ttf" rel="stylesheet">
     </head>
   <body>
     <div class="header">
@@ -212,8 +213,6 @@
       <div class="row">
         <div class="col-4">
           <img 
-          onmouseover="bigImg(this)"
-          onmouseout="normalImg(this)"
           src="assets\images\product9.jpeg" />
           <h4>RedShirt</h4>
           <div class="rating">
@@ -300,13 +299,16 @@
       <div class="small-container">
         <div class="row">
           <div class="col-2">
-            <img
+            <img class="demo-trigger"
+            onmouseover="bigImg(this)"
+            onmouseout="normalImg(this)"
              src="assets\images\exclusive.png"
               class="offer-img"
             />
           </div>
           <div class="col-2">
-            <p>Exclusivly Aviable on XYZStore</p>
+            
+            <p>Exclusivly Aviable on XYZ Store</p>
             <h1>Smart Band</h1>
             <small
               >The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
@@ -314,7 +316,9 @@
               every thing is clear as can be.
             </small>
             <a href="" class="btn">Buy Now &#8594;</a>
+            
           </div>
+          
         </div>
       </div>
     </div>
