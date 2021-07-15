@@ -9,7 +9,7 @@ function myMenuToggle() {
 
 function changeImage() {
   var x = (document.getElementById("myimage").src =
-    "assets/images/product-3.jpg");
+    "assets/images/product3.jpeg");
 }
 
 function myProduct() {

@@ -54,7 +54,7 @@ p {
 }
 
 .col-2 img {
-  max-width: 80%;
+  max-width: 95%;
   padding: 50px 0;
 }
 
@@ -67,11 +67,16 @@ p {
   border-radius: 30px;
   transition: background 0.5s;
 }
+
 .btn:hover {
   background: #563434;
 }
+
+.btn:focus {
+  outline: none;
+}
 .header {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, #80ced6);
 }
 
 .header .row {
