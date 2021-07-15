@@ -87,7 +87,7 @@ p {
 }
 
 .btn1:focus {
-  outline: none;
+  outline: hidden;
 }
 
 .header {
@@ -321,10 +321,6 @@ select:focus {
 .row-2 {
   float: right;
   margin-top: -65px;
-}
-
-form{
-  overflow: hidden;
 }
 
 /*media query for menu-----*/
