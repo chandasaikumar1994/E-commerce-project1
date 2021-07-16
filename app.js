@@ -24,8 +24,8 @@ function myProductSelection() {
 
 //Zoom in and Zoom out image
 function bigImg(x) {
-  x.style.height = "500px";
-  x.style.width = "500px";
+  x.style.height = "400px";
+  x.style.width = "400px";
 }
 
 function normalImg(x) {
