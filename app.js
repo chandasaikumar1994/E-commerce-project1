@@ -23,14 +23,14 @@ function myProductSelection() {
 }
 
 //Zoom in and Zoom out image
-function bigImg(x) {
-  x.style.height = "400px";
-  x.style.width = "400px";
+function bigImg() {
+  document.getElementById("zoom").style.height="400px";
+  document.getElementById("zoom").style.width="400px";
 }
 
-function normalImg(x) {
-  x.style.height = "100%";
-  x.style.width = "100%";
+function normalImg() {
+ document.getElementById("zoom").style.height="100%";
+ document.getElementById("zoom").style.width="100%";
 }
 
 //Calculating the discounts of the products
