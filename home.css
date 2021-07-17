@@ -80,15 +80,14 @@ p {
   margin: 30px 0;
   border-radius: 30px;
   transition: background 0.5s;
+  outline: none;
 }
 
 .btn1:hover {
   background: #563434;
 }
 
-.btn1:focus {
-  outline: hidden;
-}
+
 
 .header {
   background: radial-gradient(#fff, #80ced6);
