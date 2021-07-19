@@ -331,9 +331,10 @@ select:focus {
   }
 
   .menu-icon {
-    display: block;
+   display: block;
     cursor: pointer;
     width: 28px;
     margin-left: 20px;
+    
   }
 }
