@@ -68,10 +68,10 @@
       <div class="small-container">
         <div class="row">
           <div class="col-3">
-            <div>
+            
             <img  id="zoom" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
             src="assets\images\category1.jpeg"  />
-          </div>
+          
         </div>
 
           <div class="col-3">
@@ -279,8 +279,8 @@
         <input id="price" autocomplete="off" />
         <label>Discount:</label>
         <input id="discount" autocomplete="off" />%
-        <button onclick="getPrice()" id="mybtn">GetTotal</button>
-        <input readonly id="total" />
+        <button onclick="getPrice();return false;">GetTotal</button>
+       <input readonly id="total" />
       </form>
     
     
