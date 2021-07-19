@@ -15,7 +15,6 @@ function changeImage() {
 function myProduct() {
   var y = (document.getElementById("p1").innerHTML =
     "This is an e-commerce website");
-    
 }
 
 function myProductSelection() {
@@ -25,31 +24,24 @@ function myProductSelection() {
 
 //Zoom in and Zoom out image
 function bigImg() {
-  document.getElementById("zoom").style.height="400px";
-  document.getElementById("zoom").style.width="400px";
+  document.getElementById("zoom").style.height = "400px";
+  document.getElementById("zoom").style.width = "400px";
 }
 
 function normalImg() {
- document.getElementById("zoom").style.height="100%";
- document.getElementById("zoom").style.width="100%";
+  document.getElementById("zoom").style.height = "100%";
+  document.getElementById("zoom").style.width = "100%";
 }
 
 //Calculating the discounts of the products
+
 function getPrice() {
   var val1 = Number(document.getElementById("price").value);
   var val2 = Number(document.getElementById("discount").value) / 100;
   var totalValue = val1 - val1 * val2;
   document.getElementById("total").value = totalValue.toFixed(2);
-  var $window = $(window),
-    previousScrollTop = 0,
-    scrollLock = false;
-  $window.scroll(function (click) {
-    if (scrollLock) {
-      $window.scrollTop(previousScrollTop);
-    }
-    previousScrollTop = $window.scrollTop();
-  });
-}
+
+};
 
 //This method is used to sort the products in the list
 function mySort() {
