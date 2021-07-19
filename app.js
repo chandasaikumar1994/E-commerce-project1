@@ -15,6 +15,7 @@ function changeImage() {
 function myProduct() {
   var y = (document.getElementById("p1").innerHTML =
     "This is an e-commerce website");
+    
 }
 
 function myProductSelection() {
