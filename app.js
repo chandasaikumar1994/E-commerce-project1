@@ -23,9 +23,10 @@ function myProductSelection() {
 }
 
 //Zoom in and Zoom out image
+
 function bigImg() {
-  document.getElementById("zoom").style.height = "400px";
-  document.getElementById("zoom").style.width = "400px";
+  document.getElementById("zoom").style.height = "200px";
+  document.getElementById("zoom").style.width = "200px";
 }
 
 function normalImg() {
