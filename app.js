@@ -220,3 +220,25 @@ console.log(Object.getPrototypeOf(object2) === prototype1);
 var array = ["Watch", "Shoes", ["Socks", "T-shirt"]];
 var newarray = array.flat();
 console.log("After flattening the array:  " + newarray);
+
+//promises
+let productsAvilable = true;
+let fetchSomeData = new Promise((resolve, reject) => {
+  if (!productsAvilable) {
+    reject("Sorry for inconvinence!");
+  } else {
+    resolve({
+      id: 2,
+      message: "Thanks for chosing the products!",
+    })
+  }
+})
+
+//consuming a promise
+fetchSomeData.then(fetchedData=>{
+  console.log('then:','fetchedData');
+})
+.catch(err=>{
+  console.log('catch:','err');
+})
+
