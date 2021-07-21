@@ -224,21 +224,20 @@ console.log("After flattening the array:  " + newarray);
 //promises
 let productsAvilable = true;
 let fetchSomeData = new Promise((resolve, reject) => {
-  if (!productsAvilable) {
-    reject("Sorry for inconvinence!");
+  if (productsAvilable) {
+    resolve("Thankyou for product avaliablity");
   } else {
-    resolve({
-      id: 2,
-      message: "Thanks for chosing the products!",
-    })
+    reject("sorry for inconvinence");
   }
-})
+});
 
 //consuming a promise
-fetchSomeData.then(fetchedData=>{
-  console.log('then:','fetchedData');
-})
-.catch(err=>{
-  console.log('catch:','err');
-})
+fetchSomeData
+  .then((message) => {
+    console.log("then:" + message);
+  })
+  .catch((meaasge) => {
+    console.log("catch:" + meaasge);
+  });
+
 
