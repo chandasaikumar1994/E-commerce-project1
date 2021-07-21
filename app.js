@@ -274,10 +274,33 @@ Promise.any([product1, product2, product3]).then((values) =>
 );
 
 //use of promise in live projects using api
-fetch('https://api.github.com/users')
-.then((response)=>response.json())
-.then((result)=>console.log(result));
+fetch("https://api.github.com/users")
+  .then((response) => response.json())
+  .then((result) => console.log(result));
 
+//async and await
+//chaining of promises is an issue in promises concept
+//that's why async and await came in to picture
+//async make a function to return a promise
+//await makes a function wait for promies
 
+function store(value, error) {
+  return new Promise((resolve, reject) => {
+    if (!error) {
+      resolve(value + 10);
+    } else {
+      reject("something went wrong");
+    }
+  });
+}
 
+async function result(){
+  let result1 = await store(10,true)
+  return result1;
+}
 
+async function result2(){
+  let result=await Promise.resolve(5);
+}
+//console.log(result());
+result().then((result)=>console.log(result)).catch(error=>console.log(error));
