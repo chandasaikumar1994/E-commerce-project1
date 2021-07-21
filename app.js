@@ -240,4 +240,29 @@ fetchSomeData
     console.log("catch:" + meaasge);
   });
 
+  //promises methods
+  let product1 = Promise.resolve("The quality of the product was awesome")
+  let product2 = 70;
+  let product4 = Promise.reject('Rejected')
+  let product3 = new Promise((resolve,reject)=>{
+    setTimeout(resolve,1000,'Subscribe for more products');
+  });
+
+  //promise.all
+  //This method will executed all the products.
+  //Promise.all([product1,product2,product3]).then((values)=>console.log(values));
+
+   //promise.race
+   //This method is used to execute what ever we pass first that product will be appear
+   //Promise.race([product1,product2,product3]).then((values)=>console.log(values));
+
+ //promise.allsettled
+ //This method is used to display all wether it is resolved or rejected
+
+ //Promise.allSettled([product1,product2,product3,product4]).then((values)=>console.log(values));
+  
+//promise.any
+//This method is used to display which is resolved first
+Promise.any([product1,product2,product3]).then((values)=>console.log(values));
+
 
