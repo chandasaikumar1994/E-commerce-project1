@@ -248,26 +248,26 @@ let product3 = new Promise((resolve, reject) => {
   setTimeout(resolve, 1000, "Subscribe for more products");
 });
 
-//promise.all
+//promise.all()
 //This method will executed all the products.
 Promise.all([product1, product2, product3]).then((values) =>
   console.log(values)
 );
 
-//promise.race
+//promise.race()
 //This method is used to execute what ever we pass first that product will be appear
 Promise.race([product1, product2, product3]).then((values) =>
   console.log(values)
 );
 
-//promise.allsettled
+//promise.allsettled()
 //This method is used to display all wether it is resolved or rejected
 
 Promise.allSettled([product1, product2, product3, product4]).then((values) =>
   console.log(values)
 );
 
-//promise.any
+//promise.any()
 //This method is used to display which is resolved first
 Promise.any([product1, product2, product3]).then((values) =>
   console.log(values)
@@ -279,8 +279,6 @@ fetch("https://api.github.com/users")
   .then((result) => console.log(result));
 
 //async and await
-//chaining of promises is an issue in promises concept
-//that's why async and await came in to picture
 //async make a function to return a promise
 //await makes a function wait for promies
 
@@ -294,13 +292,16 @@ function store(value, error) {
   });
 }
 
-async function result(){
-  let result1 = await store(10,true)
+async function result() {
+  let result1 = await store(10, false);
   return result1;
 }
 
-async function result2(){
-  let result=await Promise.resolve(5);
+async function result2() {
+  let result = await Promise.resolve(5);
 }
 //console.log(result());
-result().then((result)=>console.log(result)).catch(error=>console.log(error));
+result()
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
+  
